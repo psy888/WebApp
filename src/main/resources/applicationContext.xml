@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context" xmlns:util="http://www.w3.org/2001/XMLSchema"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:component-scan base-package="com.psy888"/>
+
+    <context:property-placeholder location="classpath:MusicPlayer.properties"/>
+
+    <!--    <context:property-placeholder-->
+    <!--            location="classpath:MusicPlayer.properties"/>-->
+
+
+    <!--    <bean id="classicalMusic"-->
+    <!--          class="com.psy888.ClassicalMusic"-->
+    <!--          init-method="doMyInit"-->
+    <!--          destroy-method="doMyDestroy"/>-->
+    <!--    <bean id="rockMusic"-->
+    <!--          class="com.psy888.RockMusic"/>-->
+    <!--    <bean id="rapMusic"-->
+    <!--          class="com.psy888.RapMusic"/>-->
+    <!--    <bean id="musicList" class="java.util.ArrayList">-->
+    <!--        <constructor-arg>-->
+    <!--            <list>-->
+    <!--                <ref bean="classicalMusic"/>-->
+    <!--                <ref bean="rockMusic"/>-->
+    <!--                <ref bean="rapMusic"/>-->
+    <!--            </list>-->
+    <!--        </constructor-arg>-->
+    <!--    </bean>-->
+    <!--    <bean id="musicPlayer"-->
+    <!--          class="com.psy888.MusicPlayer"-->
+    <!--          factory-method="getMusic Player"-->
+    <!--          scope="prototype">-->
+
+    <!--        <property name="music" ref="musicList"/>-->
+    <!--        <property name="name" value="${musicPlayer.name}"/>-->
+    <!--        <property name="volume" value="${musicPlayer.volume}"/>-->
+    <!--    </bean>-->
+
+
+</beans>
